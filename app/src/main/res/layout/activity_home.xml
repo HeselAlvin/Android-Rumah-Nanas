@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:fillViewport="true"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/bottomNav">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi Pelanggan"
+            android:textColor="@color/black_text"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apa yang ingin kamu\nBeli hari ini?"
+            android:textColor="@color/black_text"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_grey"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:hint="Sambal Nanas"
+                android:padding="8dp"
+                android:paddingHorizontal="16dp"
+                android:textColorHint="@color/Grey_text"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_input_grey"
+                android:backgroundTint="@color/Yellow_pineapple"
+                android:src="@drawable/ic_filter"
+                app:tint="@color/white"/>
+        </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/btnCatSambal"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:elevation="2dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="4dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@mipmap/ic_launcher"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sambal\nNanas"
+                            android:textAlignment="center"
+                            android:textSize="12dp"
+                            android:textColor="@color/black_text"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/btnCatSirup"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:elevation="2dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="4dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@mipmap/ic_launcher"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sirup\nNanas"
+                            android:textAlignment="center"
+                            android:textSize="12dp"
+                            android:textColor="@color/black_text"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btnCatDodol"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:elevation="2dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="4dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@mipmap/ic_launcher"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dodol\nNanas"
+                            android:textAlignment="center"
+                            android:textSize="12dp"
+                            android:textColor="@color/black_text"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btnCatSelai"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/bg_rectangle"
+                        android:elevation="2dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="4dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@mipmap/ic_launcher"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Selai\nNanas"
+                            android:textAlignment="center"
+                            android:textSize="12dp"
+                            android:textColor="@color/black_text"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nikmati manisnya\nProduk Nanas Pilihan"
+                android:textColor="@color/black_text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:listitem="@layout/item_product"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/floatingNavCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:elevation="16dp"
+        app:itemIconTint="@color/black_text"
+        app:itemTextColor="@color/black_text"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

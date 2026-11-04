@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:ignore="ExtraText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Akun Baru"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/black_text"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/etNameregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"/>
+    <EditText
+        android:id="@+id/etEmailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"/>
+    <EditText
+        android:id="@+id/etPasswordregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password (Min. 8 karakter"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"/>
+    <EditText
+        android:id="@+id/etconfirmPasswor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Konfirmasi Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"/>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Register Sekarang"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+        android:backgroundTint="@color/Yellow_pineapple"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
